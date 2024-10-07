@@ -1,0 +1,200 @@
+body {
+    width: 100%;
+    background-image: url(/img/bg.gif );
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.banner {
+    color: aliceblue;
+    font-family: JetBrains Mono;
+}
+
+
+fieldset {
+    width: 60%;
+    border: none;
+    background-image: linear-gradient(purple, rgb(0, 0, 0));
+    box-shadow: 10px 10px 30px black;
+    border-radius: 10px;
+
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    animation: infinite 1s letra;
+    font-family: JetBrains Mono;
+    text-align: center;
+    width: 100%;
+    margin: 20px;
+    font-size: 30px;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ffffff;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+}
+
+.button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.oracao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+    background-image: url(/img/bg\ \(1\).gif);
+    width: 100%;
+
+}
+
+
+.oracao_p {
+    max-width: 40%;
+}
+
+.oracao_p p {
+    font-size: 30px;
+    color: rgba(245, 245, 4, 0.9);
+    font-weight: 900;
+    margin: 0;
+}
+
+.oracao_img img {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.oracao_all {
+    margin-top: 12%;
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+
+}
+
+
+.sobre_p {
+    max-width: 40%;
+}
+
+.sobre_p p {
+    font-size: 30px;
+    color: rgb(255, 251, 0);
+    font-weight: 900;
+    margin: 0;
+    border: solid orange;
+    padding: 20px;
+}
+
+
+
+.sobre {
+    margin-top: 10%;
+    margin-bottom: 70px;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back {
+    background-color: #9000ff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #9000ff;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+  }
+  
+  .recomendacao{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    text-align: center;
+    gap: 30px;
+    margin-left: 150px;
+  }
+
+  .footer{
+    border-top: solid ;
+    color: white;
+    padding-top: 20px;
+  }
+  
