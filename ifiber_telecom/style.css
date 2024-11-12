@@ -6,6 +6,7 @@ body{
     margin: 0;
     padding: 0;
     border: 0;
+    
 }
 
 
@@ -55,4 +56,12 @@ body{
 
 .card{
  
+}
+
+.full-height {
+    width: 100% !important;
+    min-height: 100vh !important; /* Define a altura mínima para preencher a visualização completa */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
 }
