@@ -6,7 +6,7 @@ body{
     margin: 0;
     padding: 0;
     border: 0;
-    
+
 }
 
 
@@ -52,10 +52,6 @@ body{
     text-align: center;
     color: #3f5bd9;
     margin-top: -10px;
-}
-
-.card{
- 
 }
 
 .full-height {
