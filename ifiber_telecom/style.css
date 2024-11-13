@@ -6,6 +6,7 @@ body{
     margin: 0;
     padding: 0;
     border: 0;
+
 }
 
 
@@ -30,4 +31,29 @@ body{
     font-family: "Bebas Neue", sans-serif;
     font-size: 20px;
 
+}
+.container{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5vh auto;
+}
+.titulopadrao1{
+    font-family: "Archivo Black", sans-serif;
+    font-size: 30px;
+    line-height: 46px;
+    text-align: center;
+    color: #2d2692;
+}
+.subtitulopadrao1{
+    font-family: "Roboto", serif;
+    font-size: 26px;
+    line-height: 28px;
+    text-align: center;
+    color: #3f5bd9;
+    margin-top: -10px;
+}
+
+.card{
+ 
 }
