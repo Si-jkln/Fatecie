@@ -53,11 +53,3 @@ body{
     color: #3f5bd9;
     margin-top: -10px;
 }
-
-.full-height {
-    width: 100% !important;
-    min-height: 100vh !important; /* Define a altura mínima para preencher a visualização completa */
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-between !important;
-}
