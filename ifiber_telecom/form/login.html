@@ -16,7 +16,6 @@
 
 <body>
 
-
     <div class="painel"> <!-- div de login -->
 
         <div class="cabecalho-login">
@@ -24,28 +23,27 @@
             <h3> Login</h3>
         </div>
 
-
-        <form>
+        <form id="login-form">
             <div class="form-group">
                 <label><i class="fa-regular fa-id-card fa-sm"></i> CPF</label>
-                <input type="text" class="form-control" placeholder="Seu CPF">
+                <input type="text" class="form-control" id="cpf" placeholder="Seu CPF">
             </div>
 
             <div class="form-group">
                 <label><i class="fa-solid fa-lock fa-sm"></i> Senha</label>
-                <input type="password" class="form-control" placeholder="Senha">
+                <input type="password" class="form-control" id="senha" placeholder="Senha">
             </div>
 
-            <button type="button" class="btn btn-outline-info color btn " id="logar">Logar</button>
-            <button type="button" class="btn btn-outline-info color " id="btnCadastro">Castrar </button>
+            <button type="button" class="btn btn-outline-info color btn" id="logar">Logar</button>
+            <button type="button" class="btn btn-outline-info color" id="btnCadastro">Cadastrar</button>
         </form>
 
-
     </div> <!-- div de login -->
+
     <div id="particles-js"></div> <!-- stats - count particles -->
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -56,19 +54,41 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="particle.js"></script>
+
     <script>
+        // Validação do botão Cadastrar
         const btnCadastro = document.getElementById("btnCadastro");
         btnCadastro.addEventListener('click', function () {
             window.location.href = '../form/cadastro.html';
         });
+
+        // Validação do botão Logar
+        const btnlogar = document.getElementById("logar");
+        btnlogar.addEventListener('click', function () {
+            const cpf = document.getElementById('cpf').value.trim();
+            const senha = document.getElementById('senha').value.trim();
+
+            if (!cpf || !senha) {
+                alert('Por favor, preencha todos os campos!');
+                return;
+            }
+
+            if (cpf.length !== 11 || isNaN(cpf)) {
+                alert('CPF inválido. Insira um CPF válido com 11 números.');
+                return;
+            }
+
+            if (senha.length < 6) {
+                alert('A senha deve ter pelo menos 6 caracteres.');
+                return;
+            }
+
+            // Se tudo estiver certo, redireciona para outra página
+            alert('Login realizado com sucesso!');
+            window.location.href = '../index.html';
+        });
     </script>
 
-    <script>
-        const btnlogar = document.getElementById("logar")
-        btnlogar.addEventListener('click', function () {
-            window.location.href = '../index.html'
-        })
-    </script>
 </body>
 
 </html>
