@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -45,7 +45,7 @@
                 <input type="password" class="form-control" placeholder="Senha">
             </div>
 
-            <button type="button" class="btn btn-outline-info color ">Castrar </button>
+            <button type="button" class="btn btn-outline-info color " id="cadastrado">Castrar </button>
         </form>
 
     </div> <!-- div de login -->
@@ -60,6 +60,15 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"></script>
+
+            <script>const btnCadastro = document.getElementById("cadastrado");
+                cadastrado.addEventListener('click', function(){
+                window.location.href ='../form/login.html';
+                alert("CLIENTE CADASTRADO COM SUCESSO!!")
+                    });
+            </script>
+           
+            
 </body>
 
 </html>
